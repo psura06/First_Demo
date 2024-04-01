@@ -5,7 +5,13 @@ pipeline {
            	    steps {  
               	    echo "cloning repository" 
               	    echo "repo cloned successfully"  
-              	    }  
-         	    } 
+              	}  
+         	}
+			stage("running maven") {
+				steps {
+					sh 'mvn clean install'
+				}
+			}
+
         }
 }
