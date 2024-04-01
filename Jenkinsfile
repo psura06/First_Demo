@@ -7,6 +7,9 @@ pipeline {
               	    echo "repo cloned successfully"  
               	}  
          	}
-			stage("running maven") 
+			stage("running maven") {
+				
+			}
+
         }
 }
