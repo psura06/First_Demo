@@ -9,7 +9,7 @@ pipeline {
          	}
 			stage("running maven") {
 				steps {
-					sh 'C:\Users\pooja\Downloads\apache-maven-3.9.6-bin\apache-maven-3.9.6\bin\mvn clean install'
+					sh '"C:\Users\pooja\Downloads\apache-maven-3.9.6-bin\apache-maven-3.9.6\bin\mvn" clean install'
 				}
 			}
 
