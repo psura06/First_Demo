@@ -14,4 +14,4 @@ RUN yum install -y apache-maven
 
 RUN mvn clean install
 
-COPY ./target/onlinebookstore.war /usr/local/tomcat/webapps 
+COPY ./target/*.war /usr/local/tomcat/webapps 
